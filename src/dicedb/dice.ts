@@ -27,7 +27,7 @@ const valRange = 300; //insert string keys from "0" to "299"
   now = Date.now();
   for (let i = 0; i < valRange; ++i) {
     promises.push(redis.get("key" + i).then(value => {
-      assert(value === String(i), "key%d", i);
+      assert(value == String(i), "key%d", i);
     }));
   }
   await Promise.all(promises);
