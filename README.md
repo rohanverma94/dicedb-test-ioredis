@@ -8,6 +8,10 @@
 ```bash
 npm install
 ```
+- Configure KeyLimit in ``source_root_dicedb/config/main.go`` before running the test
+```go
+var KeysLimit int = 300
+```
 
 ## How to run test?
 
