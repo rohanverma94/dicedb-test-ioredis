@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@types/node": "^18.11.3",
+    "ioredis": "^5.2.3",
+    "typescript": "^4.8.3"
+  },
+  "scripts": {
+    "dice-test": "npx tsc --build src/dicedb  && node dist/dice.js",
+    "redis-test": "npx tsc --build src/redis && node dist/redis.js",
+    "clean": "rm -rf ./dist"
+  }
+}
