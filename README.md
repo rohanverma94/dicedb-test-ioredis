@@ -2,10 +2,12 @@
 
 ## How to setup?
 
+- Spin up a DiceDB instance at ```127.0.0.1:7379```
+- Spin up a Redis instance at ```127.0.0.1:6379```
+- Setup this repository via below command line
 ```bash
 npm install
 ```
-
 
 ## How to run test?
 
